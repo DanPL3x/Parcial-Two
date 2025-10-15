@@ -1,6 +1,5 @@
 package com.uniajc.parcial;
 
-// Dragon.java
 public class Dragon extends Criatura implements Volador {
     public Dragon(String nombre, int salud, int fuerza) {
         super(nombre, salud, fuerza);
@@ -22,5 +21,11 @@ public class Dragon extends Criatura implements Volador {
     @Override
     public void aterrizar() {
         System.out.println(nombre + " aterriza majestuosamente.");
+    }
+
+    @Override
+    public void defender(int daño) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'defender'");
     }
 }
