@@ -28,4 +28,10 @@ public class Dragon extends Criatura implements Volador {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'defender'");
     }
+
+    @Override
+    protected int getFuerza() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getFuerza'");
+    }
 }
