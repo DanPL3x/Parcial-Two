@@ -1,11 +1,7 @@
 package com.uniajc.parcial;
 
-import com.uniajc.Magico;
-
-
 public class Mago extends Criatura implements Magico {
     private String hechizoAprendido;
-
     public Mago(String nombre, int salud, int fuerza) {
         super(nombre, salud, fuerza);
     }
@@ -40,4 +36,11 @@ public class Mago extends Criatura implements Magico {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'defender'");
     }
+
+    @Override
+    protected int getFuerza() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getFuerza'");
+    }
 }
+

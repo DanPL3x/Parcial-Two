@@ -20,4 +20,6 @@ package com.uniajc.parcial;
 
     public String getNombre() { return nombre; }
     public int getSalud() { return salud; }
+
+    protected abstract int getFuerza();
 }

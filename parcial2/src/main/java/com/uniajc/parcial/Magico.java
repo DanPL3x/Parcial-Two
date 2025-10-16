@@ -1,6 +1,4 @@
-package com.uniajc;
-
-import com.uniajc.parcial.Criatura;
+package com.uniajc.parcial;
 
 public interface Magico {
     void lanzarHechizo(Criatura objetivo);
