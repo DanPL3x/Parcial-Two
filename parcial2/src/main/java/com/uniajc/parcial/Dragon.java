@@ -21,17 +21,29 @@ public class Dragon extends Criatura implements Volador {
     @Override
     public void aterrizar() {
         System.out.println(nombre + " aterriza majestuosamente.");
+    }  
+    @Override
+    public void defender(int dano) {
+        salud -= dano;
+        System.out.println(nombre + " recibe " + dano + " de daño. Salud restante: " + salud);
+        if (salud <= 0) {
+            System.out.println(nombre + " ha sido derrotado.");
+        }
     }
 
     @Override
-    public void defender(int daño) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'defender'");
-    }
+    protected int getFuerza() { 
+        return fuerza;
+    }   
 
     @Override
-    protected int getFuerza() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getFuerza'");
+    protected void reducirSalud(int danioTotal) {    
+        salud -= danioTotal;
+        System.out.println(nombre + " recibe " + danioTotal + " de daño. Salud restante: " + salud);
+        if (salud <= 0) {
+            System.out.println(nombre + " ha sido derrotado.");
+        }
     }
+
 }
+

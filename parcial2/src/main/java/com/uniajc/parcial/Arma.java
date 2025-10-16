@@ -12,12 +12,11 @@ public class Arma {
     public int getDanioAdicional() { return danioAdicional; }
     public String getNombre() { return nombre; }
 
-    public void realizarAtaque(Guerrero guerrero, Criatura objetivo) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'realizarAtaque'");
-    }
+public void realizarAtaque(Criatura atacante, Criatura enemigo) {
+    int danioTotal = atacante.getFuerza() + danioAdicional;
+    enemigo.reducirSalud(danioTotal);
+}
 
-    
 }
 
 

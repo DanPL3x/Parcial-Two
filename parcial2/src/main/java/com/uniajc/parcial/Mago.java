@@ -42,5 +42,11 @@ public class Mago extends Criatura implements Magico {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getFuerza'");
     }
+
+    @Override
+    protected void reducirSalud(int danioTotal) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'reducirSalud'");
+    }
 }
 

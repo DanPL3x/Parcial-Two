@@ -12,7 +12,7 @@ package com.uniajc.parcial;
     }
 
     public abstract void atacar(Criatura enemigo);
-    public abstract void defender(int daño);
+    public abstract void defender(int dano);
 
     public boolean estaViva() {
         return salud > 0;
@@ -22,4 +22,6 @@ package com.uniajc.parcial;
     public int getSalud() { return salud; }
 
     protected abstract int getFuerza();
+
+    protected abstract void reducirSalud(int danioTotal);
 }
