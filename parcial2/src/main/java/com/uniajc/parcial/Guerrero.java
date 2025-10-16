@@ -22,15 +22,20 @@ public class Guerrero extends Criatura {
     }
 
     @Override
-    public void defender(int daño) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'defender'");
+    public void defender(int dano) {
+        salud -= dano;
+        System.out.println(nombre + " recibe " + dano + " de daño. Salud restante: " + salud);
+        if (salud <= 0) {
+            System.out.println(nombre + " ha sido derrotado.");
+        }
+    }   
+    @Override
+    protected int getFuerza() {
+        return fuerza;
     }
 
     @Override
-    protected int getFuerza() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getFuerza'");
-    }
-}
+    protected void reducirSalud(int danioTotal) {       
 
+    }
+} 
